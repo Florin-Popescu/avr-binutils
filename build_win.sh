@@ -1,15 +1,16 @@
-INSTALL_DIR=/home/avr-binutils
+INSTALL_DIR=/home/avr
 
 mkdir build
 cd build
 
+PATH=$PATH:$INSTALL_DIR/bin
+export PATH
+
+CFLAGS=-D__USE_MINGW_ACCESS  \
 ../configure \
 --prefix=$INSTALL_DIR \
---host=x86_64-w64-mingw32 \
 --target=avr \
---disable-nls \
---with-sysroot \
---build=`../config.guess`
+--disable-nls
 
 make all -j $NUMBER_OF_PROCESSORS
 make install
