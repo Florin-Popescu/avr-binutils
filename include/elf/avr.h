@@ -40,6 +40,7 @@
 #define E_AVR_MACH_AVR5     5
 #define E_AVR_MACH_AVR51   51
 #define E_AVR_MACH_AVR6     6 
+#define E_AVR_MACH_AVR8X    8
 #define E_AVR_MACH_AVRTINY 100
 #define E_AVR_MACH_XMEGA1  101
 #define E_AVR_MACH_XMEGA2  102

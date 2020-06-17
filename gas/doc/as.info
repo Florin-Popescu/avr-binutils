@@ -8812,6 +8812,9 @@ File: as.info,  Node: AVR Options,  Next: AVR Syntax,  Up: AVR-Dependent
      Instruction set avr6 is for the enhanced AVR core with a 3-byte PC
      (MCU types: atmega2560, atmega2561, atmega256rfr2, atmega2564rfr2).
 
+     Instruction set avr8x is for the megaAVR 0 series core
+     (MCU types: atmega4808).
+
      Instruction set avrxmega2 is for the XMEGA AVR core with 8K to 64K
      program memory space and less than 64K data space (MCU types:
      atxmega16a4, atxmega16a4u, atxmega16c4, atxmega16d4, atxmega16x1,

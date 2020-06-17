@@ -73,6 +73,9 @@
                         AVR_ISA_SRAM | AVR_ISA_MEGA | AVR_ISA_MUL | \
                         AVR_ISA_ELPM | AVR_ISA_ELPMX | AVR_ISA_SPM | \
                         AVR_ISA_BRK | AVR_ISA_EIND | AVR_ISA_MOVW)
+#define AVR_ISA_AVR8X   (AVR_ISA_1200 | AVR_ISA_LPM | AVR_ISA_LPMX | \
+                        AVR_ISA_SRAM | AVR_ISA_MEGA | AVR_ISA_MUL | \
+                        AVR_ISA_SPM | AVR_ISA_BRK | AVR_ISA_MOVW)
 
 #define AVR_ISA_AVRTINY (AVR_ISA_1200 | AVR_ISA_BRK | AVR_ISA_SRAM | \
                          AVR_ISA_TINY)

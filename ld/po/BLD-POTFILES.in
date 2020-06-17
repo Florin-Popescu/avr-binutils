@@ -53,6 +53,7 @@ eavr4.c
 eavr5.c
 eavr51.c
 eavr6.c
+eavr8x.c
 eavrtiny.c
 eavrxmega1.c
 eavrxmega2.c

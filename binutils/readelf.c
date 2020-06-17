@@ -2864,6 +2864,9 @@ decode_AVR_machine_flags (unsigned e_flags, char buf[], size_t size)
     case E_AVR_MACH_AVR6:
       strncat (buf, ", avr:6", size);
       break;
+    case E_AVR_MACH_AVR8X:
+      strncat (buf, ", avr:8", size);
+      break;
     case E_AVR_MACH_AVRTINY:
       strncat (buf, ", avr:100", size);
       break;
