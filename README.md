@@ -12,7 +12,10 @@ This is a rough guide since it only documents changes already performed. So far 
 ### New devices
 If the device family is not currently supported:
 1. Add a define for it in ./include/opcode/avr.h, combining the instruction set options available in the header which are relevant for the device. See its datasheet for program memory size and availability of instructions.
-2. It will be necessary to process it in function `compatible` in ./bfd/cpu-avr.c. Not clear exactly how to do this with a completely new family, but rule of thumb seems to be either make it incompatible with anything else, or set the larger number family as more compatible.
+2. It will be necessary to process it in function `compatible` in ./bfd/cpu-avr.c. Not clear exactly how to do this with a completely new family, but seems to be either:
+	- make it incompatible with anything else (like for AVR6 which uses 3 byte PC)
+	- set the larger number family as more compatible when family is not an extended/enhanced one (eg. avr5 more compatible than avr3)
+	- but if family is extended/enhanced, the base family is more compatible (eg. avr5 more compatible than avr51)
 3. Add a case in the switch in `bfd_elf_avr_final_write_processing` in ./bfd/elf32-avr.c.
 4. Add a case in the switch in `decode_AVR_machine_flags` in ./binutils/readelf.c.
 5. Add the family in ./ld/Makefile.am & ./ld/Makefile.in similar to other families.
