@@ -43,9 +43,6 @@ compatible (const bfd_arch_info_type * a,
      instead of 2).  */
   if (a->mach == bfd_mach_avr6 || b->mach == bfd_mach_avr6)
     return NULL;
-  /* Not clear if AVR8x is compatible with any other family */
-  if (a->mach == bfd_mach_avr8x || b->mach == bfd_mach_avr8x)
-    return NULL;
 
   if (a->mach < bfd_mach_avr6 && b->mach < bfd_mach_avr6)
     {
