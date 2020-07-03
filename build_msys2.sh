@@ -8,10 +8,9 @@ cd build
 PATH=$PATH:$INSTALL_DIR/bin
 export PATH
 
-CC=x86_64-w64-mingw32-gcc \
-CFLAGS=-D__USE_MINGW_ACCESS  \
 ../configure \
 --prefix=$INSTALL_DIR \
+--with-sysroot=$INSTALL_DIR \
 --target=avr \
 --disable-nls
 

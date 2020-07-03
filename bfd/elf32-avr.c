@@ -1584,10 +1584,6 @@ bfd_elf_avr_final_write_processing (bfd *abfd)
       val = E_AVR_MACH_AVR6;
       break;
 
-    case bfd_mach_avr8x:
-      val = E_AVR_MACH_AVR8X;
-      break;
-
     case bfd_mach_avrxmega1:
       val = E_AVR_MACH_XMEGA1;
       break;

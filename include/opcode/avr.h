@@ -2,7 +2,7 @@
 
    Copyright (C) 2000-2020 Free Software Foundation, Inc.
    Contributed by Denis Chertykov <denisc@overta.ru>
-   
+
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation; either version 3, or (at your option)
@@ -73,9 +73,6 @@
                         AVR_ISA_SRAM | AVR_ISA_MEGA | AVR_ISA_MUL | \
                         AVR_ISA_ELPM | AVR_ISA_ELPMX | AVR_ISA_SPM | \
                         AVR_ISA_BRK | AVR_ISA_EIND | AVR_ISA_MOVW)
-#define AVR_ISA_AVR8X   (AVR_ISA_1200 | AVR_ISA_LPM | AVR_ISA_LPMX | \
-                        AVR_ISA_SRAM | AVR_ISA_MEGA | AVR_ISA_MUL | \
-                        AVR_ISA_SPM | AVR_ISA_BRK | AVR_ISA_MOVW)
 
 #define AVR_ISA_AVRTINY (AVR_ISA_1200 | AVR_ISA_BRK | AVR_ISA_SRAM | \
                          AVR_ISA_TINY)
@@ -313,4 +310,3 @@ AVR_INSN (des,  "E",   "10010100EEEE1011", 1, AVR_ISA_DES,  0x940B)
 /* Operands are evaluated by hand and won't pop new fux-ups.
    The pseudo-insn is hidden behind NOP so that avr-dis.c don't see it. */
 AVR_INSN (__gcc_isr, "", "0000000000000000", 1, AVR_ISA_1200,  0x0)
-
