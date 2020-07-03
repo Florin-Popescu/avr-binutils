@@ -10,7 +10,6 @@ export PATH
 
 ../configure \
 --prefix=$INSTALL_DIR \
---with-sysroot=$INSTALL_DIR \
 --target=avr \
 --disable-nls
 
